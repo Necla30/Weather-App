@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Weather app</title>
+
+ 
+</head>
+<body>
+
+ 
+  <div class="app">
+    <h2>☀️ Weather Now</h2>
+    <div class="top">
+    <h1>How's the sky looking today?</h1>
+    <!-- Search -->
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="🔍 Search for a place...">
+      <button onclick="searchWeather()">Search</button>
+      <button onclick="getLocationWeather()" title="Use your current location">📍</button>
+    </div>
+    </div>
+
+    <!-- Current Weather -->
+     
+    <div id="currentWeather" class="card hidden"></div>
+    <button onclick="toggleUnit()">°C / °F</button>
+
+    <!-- Extra Details -->
+     <div id="details" class="card hidden details"></div>
+
+    <div class="bottom">
+     <!-- 7 Days Forcast -->
+     <div id="forecast" class="card forecast hidden"></div>
+
+     <!-- Hourly -->
+     <div id="hourly" class="card hourly hidden"></div>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Necla Agca</a>.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
